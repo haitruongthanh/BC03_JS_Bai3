@@ -28,6 +28,43 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: #fff;
+      }
+
+      .bai1 {
+        background: linear-gradient(-45deg, #c06c84, #6c5b7b, #355c7d);
+      }
+
+      .bai2 {
+        background: linear-gradient(-45deg, #7aa1d2, #dbd4b4, #cc95c0);
+      }
+
+      .bai3 {
+        background: linear-gradient(-45deg, #3b4371, #f3904f);
+      }
+
+      .bai4 {
+        background: linear-gradient(-45deg, #f29492, #114357);
+      }
+
+      .bai1,
+      .bai2,
+      .bai3,
+      .bai4 {
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+        height: 100vh;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
       }
     </style>
   </head>
@@ -39,8 +76,9 @@
           <button type="button" class="btn btn-primary" onclick="sapXepTang()">
             Nhập vào 3 số nguyên
           </button>
-          <p id="input"></p>
-          <p id="sapXepTang"></p>
+          <br />
+          <p id="input" class="display-4"></p>
+          <p id="sapXepTang" class="display-4"></p>
         </div>
       </section>
       <section class="bai2">
@@ -60,7 +98,8 @@
           <button type="button" class="btn btn-primary" onclick="logIn()">
             Đăng nhập
           </button>
-          <p id="welcome-text"></p>
+          <br />
+          <p id="welcome-text" class="display-4"></p>
         </div>
       </section>
       <section class="bai3">
@@ -69,8 +108,9 @@
           <button type="button" class="btn btn-primary" onclick="chanLe()">
             Nhập 3 số nguyên
           </button>
-          <p id="soLe"></p>
-          <p id="soChan"></p>
+          <br />
+          <p id="soLe" class="display-4"></p>
+          <p id="soChan" class="display-4"></p>
         </div>
       </section>
       <section class="bai4">
@@ -79,7 +119,8 @@
           <button type="button" class="btn btn-primary" onclick="tamGiac()">
             Nhập 3 cạnh của hình tam giác
           </button>
-          <p id="loaiTamGiac"></p>
+          <br>
+          <p id="loaiTamGiac" class="display-4"></p>
         </div>
       </section>
     </div>
