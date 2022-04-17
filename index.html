@@ -8,6 +8,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!-- One page roll -->
+    <link
+      rel="stylesheet"
+      href="./purejs-onepage-scroll-master/onepage-scroll.css"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -18,49 +23,49 @@
     />
   </head>
   <body>
-    <section class="bai1">
-      <h3>Bài 1 - Sắp xếp các số theo thứ tự tăng dần</h3>
-      <button type="button" class="btn btn-primary" onclick="sapXepTang()">
-        Nhập vào 3 số nguyên
-      </button>
-      <p id="input"></p>
-      <p id="sapXepTang"></p>
-    </section>
-    <section class="bai2">
-      <h3>Bài 2 - Welcome to Computer</h3>
-      <form action="">
-        <div class="form-group">
-          <label for="user">Lựa chọn người sử dụng máy tính</label>
-          <select class="form-control" name="user" id="user">
-            <option value="b">Ba là người sử dụng</option>
-            <option value="m">Mẹ là người sử dụng</option>
-            <option value="a">Con Trai là người sử dụng</option>
-            <option value="e">Con Gái là người sử dụng</option>
-          </select>
-        </div>
-      </form>
-      <button type="button" class="btn btn-primary" onclick="logIn()">
-        Đăng nhập
-      </button>
-      <p id="welcome-text"></p>
-    </section>
-
-    <section class="bai3">
-      <h3>Bài 3 - Chẵn - Lẻ</h3>
-      <button type="button" class="btn btn-primary" onclick="chanLe()">
-        Nhập 3 số nguyên
-      </button>
-      <p id="soLe"></p>
-      <p id="soChan"></p>
-    </section>
-
-    <section class="bai4">
-      <h3>Bài 4 - Xác định hình tam giác</h3>
-      <button type="button" class="btn btn-primary" onclick="tamGiac()">
-        Nhập 3 cạnh của hình tam giác
-      </button>
-      <p id="loaiTamGiac"></p>
-    </section>
+    <div class="main">
+      <section class="bai1">
+        <h3>Bài 1 - Sắp xếp các số theo thứ tự tăng dần</h3>
+        <button type="button" class="btn btn-primary" onclick="sapXepTang()">
+          Nhập vào 3 số nguyên
+        </button>
+        <p id="input"></p>
+        <p id="sapXepTang"></p>
+      </section>
+      <section class="bai2">
+        <h3>Bài 2 - Welcome to Computer</h3>
+        <form action="">
+          <div class="form-group">
+            <label for="user">Lựa chọn người sử dụng máy tính</label>
+            <select class="form-control" name="user" id="user">
+              <option value="b">Ba</option>
+              <option value="m">Mẹ</option>
+              <option value="a">Con Trai</option>
+              <option value="e">Con Gái</option>
+            </select>
+          </div>
+        </form>
+        <button type="button" class="btn btn-primary" onclick="logIn()">
+          Đăng nhập
+        </button>
+        <p id="welcome-text"></p>
+      </section>
+      <section class="bai3">
+        <h3>Bài 3 - Chẵn - Lẻ</h3>
+        <button type="button" class="btn btn-primary" onclick="chanLe()">
+          Nhập 3 số nguyên
+        </button>
+        <p id="soLe"></p>
+        <p id="soChan"></p>
+      </section>
+      <section class="bai4">
+        <h3>Bài 4 - Xác định hình tam giác</h3>
+        <button type="button" class="btn btn-primary" onclick="tamGiac()">
+          Nhập 3 cạnh của hình tam giác
+        </button>
+        <p id="loaiTamGiac"></p>
+      </section>
+    </div>
 
     <!-- Optional JavaScript -->
     <script src="./Bai1.js"></script>
@@ -68,6 +73,11 @@
     <script src="./Bai3.js"></script>
     <script src="./Bai4.js"></script>
 
+    <!-- One page roll srcipt -->
+    <script src="./purejs-onepage-scroll-master/onepagescroll.js"></script>
+    <script>
+      onePageScroll(".main");
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
