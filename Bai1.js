@@ -3,9 +3,9 @@
 */
 
 var sapXepTang = function () {
-  var num1 = prompt("Nhập vào số nguyên thứ nhất: ") * 1;
-  var num2 = prompt("Nhập vào số nguyên thứ hai: ") * 1;
-  var num3 = prompt("Nhập vào số nguyên thứ ba: ") * 1;
+  var num1 = document.getElementById('bai1_num1').value *1;
+  var num2 = document.getElementById('bai1_num2').value *1;
+  var num3 = document.getElementById('bai1_num3').value *1;
 
   document.getElementById(
     "input"

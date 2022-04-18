@@ -12,13 +12,15 @@
 
 var logIn = function () {
   var inputText = document.getElementById("user").value;
+  var welcomeText = null;
   if (inputText == "b") {
-    document.getElementById("welcome-text").innerHTML = "Chào Ba";
+    welcomeText = "Chào Ba";
   } else if (inputText == "m") {
-    document.getElementById("welcome-text").innerHTML = "Chào Mẹ";
+    welcomeText = "Chào Mẹ";
   } else if (inputText == "a") {
-    document.getElementById("welcome-text").innerHTML = "Chào Anh";
+    welcomeText = "Chào Anh";
   } else if (inputText == "e") {
-    document.getElementById("welcome-text").innerHTML = "Chào Em";
+    welcomeText = "Chào Em";
   }
+  document.getElementById("welcome-text").innerHTML = welcomeText;
 };

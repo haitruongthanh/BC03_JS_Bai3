@@ -4,9 +4,9 @@
 */
 
 var tamGiac = function () {
-  var canh1 = prompt("Nhập cạnh thứ nhất: ") * 1;
-  var canh2 = prompt("Nhập cạnh thứ hai: ") * 1;
-  var canh3 = prompt("Nhập cạnh thứ ba: ") * 1;
+  var canh1 = document.getElementById("bai4_canh1").value * 1;
+  var canh2 = document.getElementById("bai4_canh2").value * 1;
+  var canh3 = document.getElementById("bai4_canh3").value * 1;
 
   var loaiTamGiac = "";
   if (canh1 == canh2 && canh1 == canh3) {
